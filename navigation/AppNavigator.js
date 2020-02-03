@@ -9,14 +9,26 @@ import SettingsScreen from "../screens/SettingsScreen";
 export default createAppContainer(
   createStackNavigator(
     {
-      // You could add another route here for authentication.
-      // Read more at https://reactnavigation.org/docs/en/auth-flow.html
       Home: HomeScreen,
-      Links: LinksScreen,
-      Settings: SettingsScreen
+      Links: {
+        screen: LinksScreen,
+        navigationOptions: { gestureDirection: "horizontal" }
+      },
+      Settings: {
+        screen: SettingsScreen,
+        navigationOptions: { gestureDirection: "horizontal-inverted" }
+      }
     },
     {
-      initialRouteName: "Home"
+      initialRouteName: "Home",
+      mode: "modal",
+      headerMode: "none",
+      initialRouteName: "Home",
+      defaultNavigationOptions: {
+        cardStyle: {
+          backgroundColor: "rgba(0, 0, 0, 0)"
+        }
+      }
     }
   )
 );
