@@ -76,7 +76,6 @@ export default createAppContainer(
       initialRouteName: "Home",
       mode: "modal",
       headerMode: "none",
-      initialRouteName: "Home",
       defaultNavigationOptions: {
         cardStyle: {
           backgroundColor: "rgba(0, 0, 0, 0)"
