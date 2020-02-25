@@ -1,10 +1,7 @@
 import React from "react";
 import { Animated } from "react-native";
 import { createAppContainer } from "react-navigation";
-import {
-  createStackNavigator,
-  TransitionPresets
-} from "react-navigation-stack";
+import { createStackNavigator } from "react-navigation-stack";
 
 import HomeScreen from "../screens/HomeScreen";
 import LinksScreen from "../screens/LinksScreen";
